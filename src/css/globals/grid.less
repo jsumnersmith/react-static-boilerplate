@@ -1,0 +1,41 @@
+
+// Layout Functionality
+.rb-inner
+{
+  width: 100%;
+  .padding-right(1);
+  .padding-left(1);
+  .margin-bottom(5);
+}
+
+/* Grid System */
+.col() {
+  display: inline-block;
+  .font-size(1); //need to reset default text size on columns
+  vertical-align: top;
+}
+.col(@columnSize) {
+  width: 100% / 12 * @columnSize;
+}
+
+.rb-grid
+{
+  display: inline-block;
+  width: 100%;
+  font-size: 0; //font-size:0 here makes the columns bump up next to one another
+
+  [class*='rb-col-']{ .col(); }
+
+  .rb-col-1 { .col(1); }
+  .rb-col-2 { .col(2); }
+  .rb-col-3 { .col(3); }
+  .rb-col-4 { .col(4); }
+  .rb-col-5 { .col(5); }
+  .rb-col-6 { .col(6); }
+  .rb-col-7 { .col(7); }
+  .rb-col-8 { .col(8); }
+  .rb-col-9 { .col(9); }
+  .rb-col-10 { .col(10); }
+  .rb-col-11 { .col(11); }
+  .rb-col-12 { .col(12); }
+}

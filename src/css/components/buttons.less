@@ -1,0 +1,57 @@
+//Buttons
+.rb-button
+{
+  display: inline-block;
+  .padding-top(.75);
+  .padding-bottom(.75);
+  .padding-left(1.25);
+  .padding-right(1.25);
+  .margin-right(.5);
+  color: @white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: @blue;
+  border-bottom: 5px solid @blue-light;
+  cursor: pointer;
+  .transition(all, .2s, ease-in-out);
+  &.active,
+  &:hover
+  {
+    background: @blue-light;
+    border-bottom: 5px solid @blue;
+  }
+  &.inactive
+  {
+    opacity: .5;
+  }
+  &--cancel
+  {
+    color: @red;
+    background: lighten(@red, 35%);
+    border-bottom: 5px solid @red;
+    &:hover,
+    {
+      color: @white;
+      background: @red;
+      border-bottom: 5px solid lighten(@red, 35%);
+    }
+  }
+
+  &--delete
+  {
+    color: @white;
+    background: @red;
+    border-bottom: 5px solid lighten(@red, 35%);
+    &:hover,
+    {
+      color: @red;
+      background: lighten(@red, 35%);
+      border-bottom: 5px solid @red;
+    }
+    &.hide
+    {
+      display: none;
+    }
+  }
+}

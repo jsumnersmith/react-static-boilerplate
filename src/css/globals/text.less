@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:700|Karla:400,700);
+
+body
+{
+  background-color: @white;
+  font-size: @root-font-size;
+  font-family: "Karla", sans-serif;
+  color: @navy;
+}
+
+h1,h2,h3,h4,h5
+{
+  font-family: "Work Sans", "Helvetica", sans-serif;
+  font-weight: 700;
+  .margin-top(1);
+  margin-bottom: .6em;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+}
+h1 {.font-size(3); }
+h2, .rb-h2 { .font-size(2); }
+h3 { .font-size(1.5); }
+
+strong {font-weight: bold; }
+em {font-style: italic; }
+
+p
+{
+  margin-bottom: .6em;
+  .line-height(1.4);
+}
+
+.rb-help-text { font-style: italic; }
+.rb-warning-text { color: @red; }
+
+.rb-ui
+{
+  text-transform: uppercase;
+  font-weight: 700;
+  .font-size(1);
+  letter-spacing: 1px;
+  .margin-bottom(0);
+}
