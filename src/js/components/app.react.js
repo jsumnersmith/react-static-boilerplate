@@ -8,7 +8,7 @@ var App = React.createClass({
   	return (
       <div className="rb-app rt-grid">
         <div className="rb-col-12">
-          <p>My App</p>
+          <p>Hello, World.</p>
         </div>
       </div>
   	);
